@@ -1,13 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { TempControl } from './components/TempControl';
+import { useEffect } from 'react';
+import { bgChange } from './utils/util';
 
 function App() {
+
+  const [temp, setTemp] = React.useState(0);
+  const [cssClass, setCss] = React.useState("none");
+
+  useEffect(() => {
+    setCss(bgChange(temp));
+  },[temp]) // <-- here put the parameter to listen
+
   return (
-    <div className="App">
+    <div className={`App ${cssClass}`}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <TempControl temp={temp} setTemp={setTemp}></TempControl>
         </p>
         <a
           className="App-link"

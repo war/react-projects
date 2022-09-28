@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +34,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.none {
+  background-color: #202020;
+}
+
+.minus-thirty {
+  background-color: #ef85ff;
+}
+
+.minus-twenty {
+  background-color: #b97cff;
+}
+
+.minus-ten {
+  background-color: #72a1ff;
+}
+
+.zero {
+  background-color: #647caa;
+}
+
+.ten {
+  background-color: #aaff7c;
+}
+
+.twenty {
+  background-color: #b2a954;
+}
+
+.thirty {
+  background-color: #ffbe7c;
+}
+
+.forty {
+  background-color: #ff7e7e;
+}
+
+button {
+  width: 45px;
+  height: 25px;
+  margin: 10px;
 }
