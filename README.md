@@ -1,8 +1,10 @@
 # react-projects
 
-project to make a bunch of crap react projects to learn quickly
+This is a project to make a bunch of crap react projects to learn react quicker.
 
+```
 1. Hello World App
 
 Summary:
-create a new app and make minor modifications to display “Hello world” text on the page.
+Create a new app and make minor modifications to display “Hello world” text on the page.
+```
