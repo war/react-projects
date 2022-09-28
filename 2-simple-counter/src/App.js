@@ -1,13 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
 function App() {
+
+  const [count, setCount] = React.useState(0);
+
+  const addCount = () => {
+    setCount(count + 1);
+  }
+
+  const remCount = () => {
+    setCount(count - 1);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Counter: {count}
+        </p>
+        <p>
+        <button onClick={addCount}>+</button>
+        <button onClick={remCount}>-</button>
         </p>
         <a
           className="App-link"
